@@ -1,0 +1,14 @@
+/.env
+/.vscode
+/dspyenv
+/dspy_test1.ipynb
+/dspy_test2.ipynb
+/dspy_test3.ipynb
+/dspy_test4.ipynb
+/flow.ipynb
+/flow.py
+/flow1.py
+/flow2.py
+/flow3.py
+/flow4.py
+/playwright_scraper.py

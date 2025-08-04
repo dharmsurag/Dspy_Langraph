@@ -1,0 +1,97 @@
+{
+  "prog.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "headline": "AutoCo secures government EV subsidies.",
+        "fundamentals": "P\/E: 21, Rev Growth: 9%",
+        "market_conditions": "VIX: 17 (low)",
+        "reasoning": "The government subsidies for EV (Electric Vehicles) are likely to boost AutoCo's revenue and profitability, given the company's focus on electric vehicles. A low VIX level indicates a stable market, which reduces the risk associated with investing in the stock. The fundamentals, with a P\/E of 21 and a revenue growth of 9%, suggest a reasonable valuation and a strong growth trajectory.",
+        "answer": "Buy",
+        "rationale": "The secured government EV subsidies are expected to significantly enhance AutoCo's growth prospects. Coupled with a reasonable P\/E ratio and a healthy revenue growth rate in a stable market environment (low VIX), the stock presents a compelling buy opportunity."
+      },
+      {
+        "augmented": true,
+        "headline": "TechCorp hit by global chip shortage, production slows.",
+        "fundamentals": "P\/E: 27, Rev Growth: 2%",
+        "market_conditions": "VIX: 23 (high)",
+        "reasoning": "The global chip shortage negatively impacts TechCorp's production, which is reflected in its low revenue growth of 2%. The high VIX level of 23 indicates increased market volatility and risk. With a P\/E ratio of 27, the stock might be considered overvalued given the current challenges.",
+        "answer": "Sell",
+        "rationale": "The combination of slowed production due to the chip shortage, low revenue growth, and high market volatility suggests a sell recommendation. The high P\/E ratio in this context may indicate that the stock is overvalued, adding to the downside risk."
+      },
+      {
+        "augmented": true,
+        "headline": "EnergyCo divests non-core assets to focus on renewables.",
+        "fundamentals": "P\/E: 19, Rev Growth: 7%",
+        "market_conditions": "VIX: 18 (moderate)",
+        "reasoning": "The company's strategic shift towards renewables, indicated by the divestment of non-core assets, is likely to enhance its growth prospects and align with current market trends favoring sustainable energy. The fundamentals, with a P\/E of 19 and a revenue growth of 7%, suggest a stable and growing business. Additionally, the moderate VIX level of 18 indicates a relatively stable market condition, which reduces the risk associated with the stock.",
+        "answer": "Buy",
+        "rationale": "The divestment strategy aligns with renewable focus, supported by solid fundamentals and moderate market conditions, indicating potential for growth."
+      },
+      {
+        "augmented": true,
+        "headline": "BankCo increases dividends after strong loan growth.",
+        "fundamentals": "P\/E: 15, Rev Growth: 12%",
+        "market_conditions": "VIX: 16 (low)",
+        "reasoning": "The company's strong loan growth and increased dividends indicate a positive financial performance. The low VIX level suggests a stable market environment.",
+        "answer": "Buy",
+        "rationale": "Strong loan growth, increased dividends, and a low VIX level indicate a favorable outlook for BankCo, making it a good investment opportunity."
+      },
+      {
+        "augmented": true,
+        "headline": "AutoCo reports strong quarterly sales despite chip shortage.",
+        "fundamentals": "P\/E: 20, Rev Growth: 10%",
+        "market_conditions": "VIX: 21 (moderate)",
+        "reasoning": "The company's strong quarterly sales despite the chip shortage indicate resilience and potential for growth. The P\/E ratio of 20 and revenue growth of 10% suggest solid fundamentals. A VIX level of 21 indicates moderate market volatility.",
+        "answer": "Buy",
+        "rationale": "Strong sales performance and positive growth indicators in a moderately volatile market suggest a favorable outlook for the stock, making it a good buy."
+      },
+      {
+        "headline": "RetailCo expands e-commerce platform successfully.",
+        "fundamentals": "P\/E: 18, Rev Growth: 12%",
+        "market_conditions": "VIX: 19 (moderate)",
+        "answer": "Buy",
+        "rationale": "E-commerce growth and solid fundamentals outweigh moderate volatility."
+      }
+    ],
+    "signature": {
+      "instructions": "As a critical financial analyst, you must make a high-stakes investment decision within the next 24 hours. Given a news headline, company fundamentals, and market conditions, recommend whether to Buy, Hold, or Sell a stock, and provide a detailed rationale. The decision will influence a multi-million dollar investment portfolio, and the accuracy of your analysis will directly impact the financial success of a major investment firm. Your recommendation must be based on a thorough step-by-step analysis of the provided information.",
+      "fields": [
+        {
+          "prefix": "Headline:",
+          "description": "A financial news headline about a company."
+        },
+        {
+          "prefix": "Fundamentals:",
+          "description": "Company fundamentals, e.g., P\/E ratio, revenue growth."
+        },
+        {
+          "prefix": "Market Conditions:",
+          "description": "Market conditions, e.g., VIX level and interpretation."
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "Recommendation: Buy, Hold, or Sell."
+        },
+        {
+          "prefix": "Rationale:",
+          "description": "Reasoning behind the recommendation."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "2.6.27",
+      "cloudpickle": "3.1"
+    }
+  }
+}
