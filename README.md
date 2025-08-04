@@ -24,8 +24,6 @@ This repository implements a modular, dynamic financial analysis pipeline using 
 ---
 
 ## File Overview
-
-- **flow3.py**  
   Main pipeline implementation using DSPy, LangGraph, and Selenium. Handles query planning, module orchestration, and result aggregation.
 
 - **base_flow.py**  
@@ -50,7 +48,6 @@ This repository implements a modular, dynamic financial analysis pipeline using 
 - [langchain](https://github.com/langchain-ai/langchain)
 - [selenium](https://pypi.org/project/selenium/)
 - [ddgs](https://pypi.org/project/ddgs/) (DuckDuckGo Search)
-- Chrome WebDriver (for Selenium)
 - [dotenv](https://pypi.org/project/python-dotenv/) (for API keys)
 - A supported LLM API key (e.g., Groq, OpenAI, etc.)
 
@@ -71,7 +68,7 @@ pip install dspy langgraph langchain selenium ddgs python-dotenv
 
 2. **Run the main pipeline:**  
    ```sh
-   python flow3.py
+   python base_flow.py
    ```
    This will process example queries and print answers with citations.
 
@@ -107,8 +104,6 @@ Citations: [list of URLs]
 
 ## Troubleshooting
 
-- **Selenium errors:**  
-  Ensure ChromeDriver is installed and matches your Chrome version.
 - **API errors:**  
   Check your `.env` file and API key validity.
 - **Search backend warnings:**  
@@ -122,12 +117,6 @@ Citations: [list of URLs]
 - [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
 - [LangChain Tools](https://python.langchain.com/docs/integrations/tools/)
 - [DDGS (DuckDuckGo Search)](https://pypi.org/project/ddgs/)
-
----
-
-## License
-
-MIT License (see repository for details).
 
 ---
 
